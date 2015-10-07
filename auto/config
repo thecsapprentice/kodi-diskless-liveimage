@@ -3,4 +3,5 @@
 set -e
 
 lb config noauto \
+     --architectures i386 \
 	"${@}"
