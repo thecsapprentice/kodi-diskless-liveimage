@@ -1,0 +1,4 @@
+mithra.olympus:/mnt/hoard/movies /media/movies nfs auto,soft 0 0
+mithra.olympus:/mnt/hoard/tvshows /media/tvshows nfs auto,soft 0 0
+mithra.olympus:/mnt/hoard/music /media/music nfs auto,soft 0 0
+mithra.olympus:/mnt/hoard/repository/kodi /kodi_remote nfs auto,soft,exec 0 0

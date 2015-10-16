@@ -3,7 +3,14 @@
 set -e
 
 lb config noauto \
-     --architectures i386 \
-     --distribution sid \
-     --archive-areas "main contrib non-free" \
-	"${@}"
+   --architectures amd64 \
+   --apt-secure false \
+   --distribution sid \
+   --mirror-bootstrap ftp://ftp.us.debian.org/debian/ \
+   --apt-recommends true \
+   --archive-areas "main contrib non-free" \
+   --firmware-binary true \
+   --firmware-chroot true \
+   --binary-images iso-hybrid \
+   --initsystem systemd \
+   "${@}"
